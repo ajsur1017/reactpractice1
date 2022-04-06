@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const Example = () => <h1>Hello, I am the example function</h1>
+const Example2 = <h1>Hello, I am the second example variable</h1>
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Example />
+    {Example2}
+    {"data can be injected also this way"}
   </React.StrictMode>,
   document.getElementById('root')
 );
