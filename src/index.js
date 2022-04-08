@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const Example = () => <h1>Hello, I am the example function</h1>
-const Example2 = <h1>Hello, I am the example variable</h1>
+const Example = () => <h1>Hello, I am the example function, coming from index.js</h1>
+const Example2 = <h1>Hello, I am the example variable, coming from index.js</h1>
 
 ReactDOM.render(
   <React.StrictMode>
