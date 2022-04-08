@@ -8,30 +8,24 @@ import Main from './components/Main';
 
 
 function App() {
+
+  const aFunc = () => {console.log("aFunc")}
+  const buttonProps = {backgroundColor: "white", color: "black", are: ["Stuff3", "Stuff4"], text: "Click White"}
+
   return (
     <> 
     {/* Fragments <></> basically create and array */}
       <div className="App">
         <Header />
         <Main />
-        <Button />
-        <Button />
-        <Button />
+        <Button backgroundColor="blue" color="red" names={["Stuff1", "Stuff2"]} func={aFunc} text="Click Blue"/>
+        {/* ^^^ can pass individual functions to reused components */}
+        <Button {...buttonProps}/>  
+        {/* ^^^ uses the spread operator to take each individual property */}
+        <Button backgroundColor="red" color="blue" hard={["Stuff5", "Stuff6"]}>Click Red</Button>
+        {/* ^^^ uses the built in props.children, automatically injects what is inside the component tag*/}
         <Footer />
-        {/* <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header> */}
+        
       </div>
     </>
 
