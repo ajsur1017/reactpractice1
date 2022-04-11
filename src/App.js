@@ -4,6 +4,7 @@ import Button from './components/Button';
 import ColorSwitcher from './components/ColorSwitcher';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Iterate from './components/Iterate';
 import Main from './components/Main';
 
 
@@ -13,7 +14,7 @@ function App() {
 
   const aFunc = () => {console.log("aFunc")}
   const buttonProps = {backgroundColor: "white", color: "black", are: ["Stuff3", "Stuff4"], text: "Click White"}
-  // ^^^ Props
+  // ^^^ Props defined for a button
 
   return (
     <> 
@@ -30,6 +31,7 @@ function App() {
         {/* ^^^ uses the built in props.children, automatically injects what is inside the component tag*/}
         <ColorSwitcher/>
         {/* ^^^ demonstrates state management */}
+        <Iterate/>
         <Footer />
         
       </div>

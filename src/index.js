@@ -3,17 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const Example = () => <h1>Hello, I am the example function, coming from index.js</h1>
 const Example2 = <h1>Hello, I am the example variable, coming from index.js</h1>
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-    <Example />
-    {Example2}
-    {"data can be injected also this way"}
-  </React.StrictMode>,
+  <Router>
+    <React.StrictMode>
+      <App />
+      <Example />
+      {Example2}
+      {"data can also be injected this way using JSX"}
+    </React.StrictMode>
+  </Router>,
   document.getElementById('root')
 );
 
