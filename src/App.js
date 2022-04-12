@@ -7,12 +7,10 @@ import Header from './components/Header';
 import Iterate from './components/Iterate';
 import Main from './components/Main';
 
-
-
 function App() {
 
-
   const aFunc = () => {console.log("aFunc")}
+  // ^^^ a way to pass a function as props
   const buttonProps = {backgroundColor: "white", color: "black", are: ["Stuff3", "Stuff4"], text: "Click White"}
   // ^^^ Props defined for a button
 

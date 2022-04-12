@@ -31,8 +31,6 @@ function ColorSwitcher() {
             }}>Grey</button>
             {/* when the button is clicked it runs the function 'setColor' which is triggering a rerender  */}
         </div>
-
-
     </div>
 }
 export default ColorSwitcher
