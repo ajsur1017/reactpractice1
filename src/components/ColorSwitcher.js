@@ -1,4 +1,4 @@
-import {useState} from "react"
+import { useState } from "react"
 // useState hook. Creates a variable that is reactive. 
 // Hooks have to be used in a function component. Cannot be used in a conditional. 
 
